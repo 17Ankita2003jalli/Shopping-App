@@ -9,6 +9,9 @@ backend/target/
 .DS_Store
 *.log
 
+# Maven/Gradle build artifacts
+target/
+*.class
 # IntelliJ / STS / VSCode etc
 .idea/
 .vscode/
