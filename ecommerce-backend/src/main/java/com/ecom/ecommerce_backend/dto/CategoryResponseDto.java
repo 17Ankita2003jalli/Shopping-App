@@ -1,11 +1,11 @@
 package com.ecom.ecommerce_backend.dto;
 
-import java.util.List;
-
 import lombok.Data;
+
 @Data
 public class CategoryResponseDto {
 	private Long id;
-    private String name;
-    private List<Long> productIds;
+	private String name;
+//    I am not showing any product details along with the category GET method so i am commenting the product list.
+//    private List<Long> productIds;
 }

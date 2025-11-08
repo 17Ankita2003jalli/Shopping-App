@@ -4,8 +4,11 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Entity
 @Data
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
