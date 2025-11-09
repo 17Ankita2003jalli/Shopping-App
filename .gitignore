@@ -8,10 +8,13 @@ backend/target/
 # OS and IDE files
 .DS_Store
 *.log
-
-# Maven/Gradle build artifacts
+node_modules/
+dist/
+.vite/
 target/
-*.class
+.DS_Store
+.env
+.class
 # IntelliJ / STS / VSCode etc
 .idea/
 .vscode/

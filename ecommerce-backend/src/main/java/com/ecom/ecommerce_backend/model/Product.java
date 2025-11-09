@@ -21,6 +21,7 @@ public class Product {
     @Column(length = 1000)
     private String description;
     
+    
     private String imageUrl;
     
     @Column(nullable = false, precision = 10, scale = 2)
@@ -35,4 +36,6 @@ public class Product {
     @JoinColumn(name = "category_id", nullable = false)
     @JsonIgnoreProperties("products")
     private Category category;
+		
+	
 }
