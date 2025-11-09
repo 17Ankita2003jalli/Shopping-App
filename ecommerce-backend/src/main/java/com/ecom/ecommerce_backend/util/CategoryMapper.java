@@ -17,13 +17,6 @@ public class CategoryMapper {
 	    dto.setId(category.getId());
 	    dto.setName(category.getName());
 
-	    if (category.getProducts() != null) {
-	        dto.setProductIds(category.getProducts()
-	            .stream()
-	            .map(product -> product.getId())
-	            .toList());
-	    }
-
 	    return dto;
 	}
 }

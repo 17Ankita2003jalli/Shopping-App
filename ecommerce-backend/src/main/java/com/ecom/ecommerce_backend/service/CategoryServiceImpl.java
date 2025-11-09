@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CategoryServiceImpl implements CategoryService{
 
-    private final CacheConfig cacheConfig;
+	private final CacheConfig cacheConfig;
 	private CategoryRepo categoryRepo;
 	
 	CategoryServiceImpl(CategoryRepo categoryRepo, CacheConfig cacheConfig){
@@ -50,5 +50,4 @@ public class CategoryServiceImpl implements CategoryService{
                 .map(CategoryMapper::mapToDTO)
                 .collect(Collectors.toList());
 	}
-
 }

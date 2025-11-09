@@ -4,16 +4,19 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
 @Data
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 public class Category {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String name;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String name;
 
-    @OneToMany(mappedBy = "category",
-            cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY)
-    private Set<Product> products;
+	@OneToMany(mappedBy = "category", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JsonIgnoreProperties("category")
+	private Set<Product> products;
 }

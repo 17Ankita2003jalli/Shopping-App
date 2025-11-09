@@ -8,7 +8,14 @@ backend/target/
 # OS and IDE files
 .DS_Store
 *.log
-
+node_modules/
+dist/
+.vite/
+target/
+.idea/
+.vscode/
+.DS_Store
+.env
 # IntelliJ / STS / VSCode etc
 .idea/
 .vscode/
