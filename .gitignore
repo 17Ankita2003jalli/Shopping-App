@@ -12,10 +12,9 @@ node_modules/
 dist/
 .vite/
 target/
-.idea/
-.vscode/
 .DS_Store
 .env
+.class
 # IntelliJ / STS / VSCode etc
 .idea/
 .vscode/

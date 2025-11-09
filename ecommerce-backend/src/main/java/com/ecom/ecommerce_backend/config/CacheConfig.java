@@ -16,11 +16,11 @@ public class CacheConfig {
 	public CacheManager cacheManager() {
         SimpleCacheManager cacheManager = new SimpleCacheManager();
         cacheManager.setCaches(Arrays.asList(
-        		 new ConcurrentMapCache("categories"),
-                 new ConcurrentMapCache("category"),
-                 new ConcurrentMapCache("products"),
-                 new ConcurrentMapCache("product"),
-                 new ConcurrentMapCache("productsByCategory")
+            new ConcurrentMapCache("categories"),
+            new ConcurrentMapCache("category"),
+            new ConcurrentMapCache("products"),
+            new ConcurrentMapCache("product"),
+            new ConcurrentMapCache("productsByCategory")
         ));
         return cacheManager;
     }
