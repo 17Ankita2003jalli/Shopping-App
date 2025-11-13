@@ -29,3 +29,6 @@ frontend/.env
 backend/.mvn/
 backend/mvnw
 backend/mvnw.cmd
+node_modules/
+frontend/node_modules/
+frontend/dist/

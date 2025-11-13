@@ -5,6 +5,8 @@ import lombok.Data;
 
 import java.util.Set;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
